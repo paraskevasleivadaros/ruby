@@ -1,0 +1,26 @@
+/* navigation menu styles */
+nav {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav a {
+  color: #fff;
+  padding: 1em;
+  text-decoration: none;
+}
+
+/* dark theme styles */
+body.dark {
+  background-color: #333;
+  color: #fff;
+}
+
+/* light theme styles */
+body.light {
+  background-color: #fff;
+  color: #333;
+}
+
