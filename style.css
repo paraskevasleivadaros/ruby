@@ -1,8 +1,44 @@
-body {
-  background-color: #f0f0f0;
+/* Basic Skeleton styles */
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
 }
 
+/* Links */
+a {
+  color: #1EAEDB;
+}
+
+/* Buttons */
+button {
+  background-color: #1EAEDB;
+  color: #fff;
+  border-radius: 5px;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+/* Additional styles for the website */
+
+/* Container for the main content */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+/* Dark theme styles */
 .dark-theme {
   background-color: #333;
+  color: #fff;
+}
+
+.dark-theme a {
+  color: #1EAEDB;
+}
+
+.dark-theme button {
+  background-color: #1EAEDB;
   color: #fff;
 }
