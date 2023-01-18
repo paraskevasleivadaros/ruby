@@ -1,20 +1,8 @@
 body {
-  font-family: Arial, sans-serif;
-}
-nav a {
-  display: inline-block;
-  padding: 10px;
-  text-decoration: none;
-  color: black;
-}
-.container {
-  width: 90%;
-  margin: 0 auto;
+  background-color: #f0f0f0;
 }
 
-@media (max-width: 600px) {
-  /* styles for mobile devices */
-  .container {
-    width: 100%;
-  }
+.dark-theme {
+  background-color: #333;
+  color: #fff;
 }
