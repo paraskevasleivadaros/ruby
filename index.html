@@ -1,22 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="myApp">
 <head>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <script src="script.js"></script>
+  <title>Learn Ruby</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
-<body>
-  <header>
-    <nav>
-      <a href="#intro">Introduction</a>
-      <a href="#lessons">Lessons</a>
-      <a href="#examples">Examples</a>
-    </nav>
-  </header>
-  <main id="content">
-    <section id="intro">
-      <h1>Welcome to Learn Ruby</h1>
-      <p>This website is dedicated to teaching the Ruby programming language.</p>
-    </section>
-  </main>
+<body ng-controller="myController">
+  <nav>
+    <a ng-href="#home">Home</a>
+    <a ng-href="#about">About</a>
+    <a ng-href="#examples">Examples</a>
+  </nav>
+  <div class="container">
+    <div ng-view></div>
+  </div>
+  <button ng-click="toggleTheme()">Toggle Theme</button>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+  <script>
+    var app = angular.module('myApp', []);
+    app.controller('myController', function($scope) {
+      $scope.isDark = false;
+      $scope.toggleTheme = function() {
+        if ($scope.isDark) {
+          $scope.isDark = false;
+        } else {
+          $scope.isDark = true;
+        }
+      };
+    });
+  </script>
 </body>
 </html>
